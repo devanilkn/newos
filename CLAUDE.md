@@ -25,6 +25,15 @@ Each design document should include:
 
 Small, local changes (fixing a typo, renaming a variable, adding a test) do not need a design document.
 
+## Tests
+
+All code must have tests. No implementation is complete without them.
+
+- Every new function, module, or component gets a corresponding test
+- Tests live in the `tests/` directory of the relevant component
+- Edge cases and failure paths must be tested, not just the happy path
+- A change that breaks existing tests must fix them before being committed — do not disable or delete tests to make a build pass
+
 ## Repository layout
 
 ```
