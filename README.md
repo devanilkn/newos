@@ -16,13 +16,26 @@ As AI agents become capable of generating, deploying, and iterating on entire ap
 - **Autonomous lifecycle management** — deployment, scaling, and recovery are managed by the system without requiring human intervention
 - **Introspectable** — every running application carries a trace of its origin, intent, and generation context
 
+## Repository layout
+
+```
+newos/
+├── kernel/      # OS kernel — scheduling, IPC, capability enforcement
+├── loader/      # Bootloader — firmware handoff to kernel
+├── sysmaker/    # Image builder — assembles a bootable system
+├── ui/          # Initial agent-facing interface
+├── docs/        # User and developer documentation
+└── design/      # Architecture decisions, specs, and RFCs
+```
+
 ## Status
 
 Early-stage research and development. Nothing here is production-ready.
 
 ## Documentation
 
-See the [`docs/`](docs/) directory for design documents and architecture notes.
+- [`docs/`](docs/) — how to build, run, and work with newos
+- [`design/`](design/) — architecture decisions, component specs, and RFCs
 
 ## License
 
